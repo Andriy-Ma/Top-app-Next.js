@@ -7,7 +7,7 @@
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    transition: all 0.2s;
+    transition: all 0.1s;
 }
 
 .primary{
@@ -38,7 +38,7 @@
 
 .down{
     transform: rotate(90deg);
-    transition: all 0.2s;
+    transition: all 0.1s;
 }
 
 .primary svg, .ghost:hover svg {
