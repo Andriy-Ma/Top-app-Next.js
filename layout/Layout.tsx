@@ -9,16 +9,14 @@ import Footer from './Footer/Footer';
 function Layout ({children}: LayoutProps): JSX.Element {
 
   return (
-    <>
-    <Header/>
-    <div>
-        <Sidebar/>
-        <div>
+    <div className={styles.wraper}>
+    <Header className={styles.header}/>
+        <Sidebar className={styles.sidebar}/>
+        <div className={styles.body}>
             {children}
         </div>
+    <Footer className={styles.footer}/>
     </div>
-    <Footer/>
-    </>
   )
 }
 
