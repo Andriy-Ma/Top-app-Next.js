@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/Button/Button";
 import Htag from "../components/Htag/Htag";
 import Ptag from "../components/Ptag/Ptag";
@@ -10,7 +10,7 @@ import axios from 'axios';
 import { MenuItem } from "../intefaces/menu.interface";
 
 
-function Home({menu}: HomeProps): JSX.Element {
+function Home({menu,firstCategory}: HomeProps): JSX.Element {
 
   const [rating , setRating] = useState<number>(4);
 

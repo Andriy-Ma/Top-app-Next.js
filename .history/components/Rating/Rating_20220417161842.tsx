@@ -25,7 +25,10 @@ function Rating({isEditable = false , rating , setRating, ...props}: RatingProps
         onMouseEnter={() => changeDispaly(i + 1)}
         onClick={() => onclick(i+1)}
         >
-          <StarIcon/>
+          <StarIcon
+        tabIndex={isEditable ? 0 : -1}
+        onKeyDown={(e: KeyboardEvent<SVGAElement>) => isEditable && handleSpace(i + 1 ,e)}
+        />
         </span>
         
       );
