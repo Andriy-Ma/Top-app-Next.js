@@ -8,6 +8,7 @@ function Sidebar({...props}:SidebarProps): JSX.Element {
     return(
         <div {...props}>
          <Menu/>
+         lol
         </div>
     )
 }

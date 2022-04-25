@@ -22,7 +22,8 @@ function Home({menu}: HomeProps): JSX.Element {
      <Ptag >fdfdsfdsfdfdsdf</Ptag>
      <Tag size="m" color="red" >fdfd</Tag>
      <Rating  rating={rating} isEditable setRating={setRating} ></Rating>
-
+     
+     
      </>
     
   )

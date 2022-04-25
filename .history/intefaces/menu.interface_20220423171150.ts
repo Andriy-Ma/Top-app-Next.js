@@ -11,7 +11,6 @@ import { TopLevelCategory } from "./toppage.interface";
         _id: {
             secondCategory: string;
         };
-        isOpened?: boolean;
         pages: PageItem[];
     }
 
